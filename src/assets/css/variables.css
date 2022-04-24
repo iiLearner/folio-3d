@@ -1,0 +1,19 @@
+:root {
+  --ff-3d-viever-bg-color: #ffffff;
+  --ff-3d-viever-scene-bg-color: #ebebeb;
+  --ff-3d-viever-text-color: #111111;
+  --ff-3d-viever-secondary-text-color: #444444;
+  --ff-3d-viever-white: #ffffff;
+  --ff-3d-viever-font-font-family: Arial, Helvetica, sans-serif;
+  --ff-3d-viever-border-radius: 4px;
+  --ff-3d-viever-modal-backdrop: rgba(10, 10, 10, 0.86);
+  --ff-3d-viever-modal-bg-color: var(--ff-3d-viever-bg-color);
+  --ff-3d-viever-modal-text-color: var(--ff-3d-viever-text-color);
+  --ff-3d-viever-modal-title-font-size: 16px;
+  --ff-3d-viever-modal-title-font-weight: bold;
+  --ff-3d-viever-modal-footer-text-color: #adadad;
+  --ff-3d-viever-modal-header-text-color: #4f4f4f;
+  --ff-3d-viever-tooltip-font-size: 16px;
+  --ff-3d-viever-tooltip-font-size-small: 12px;
+  --ff-3d-viever-tooltip-font-color: #777;
+}

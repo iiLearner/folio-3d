@@ -1,0 +1,111 @@
+[data-ff-viewer] {
+  line-height: 1;
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+[data-ff-viewer] div,
+[data-ff-viewer] span,
+[data-ff-viewer] applet,
+[data-ff-viewer] object,
+[data-ff-viewer] iframe,
+h1,
+[data-ff-viewer] h2,
+[data-ff-viewer] h3,
+[data-ff-viewer] h4,
+[data-ff-viewer] h5,
+[data-ff-viewer] h6,
+[data-ff-viewer] p,
+[data-ff-viewer] blockquote,
+[data-ff-viewer] pre,
+a,
+[data-ff-viewer] abbr,
+[data-ff-viewer] acronym,
+[data-ff-viewer] address,
+[data-ff-viewer] big,
+[data-ff-viewer] cite,
+[data-ff-viewer] code,
+del,
+[data-ff-viewer] dfn,
+[data-ff-viewer] em,
+[data-ff-viewer] ins,
+[data-ff-viewer] kbd,
+[data-ff-viewer] q,
+[data-ff-viewer] s,
+[data-ff-viewer] samp,
+small,
+[data-ff-viewer] strike,
+[data-ff-viewer] strong,
+[data-ff-viewer] sub,
+[data-ff-viewer] sup,
+[data-ff-viewer] tt,
+[data-ff-viewer] var,
+b,
+[data-ff-viewer] u,
+[data-ff-viewer] i,
+[data-ff-viewer] center,
+dl,
+[data-ff-viewer] dt,
+[data-ff-viewer] dd,
+[data-ff-viewer] ol,
+[data-ff-viewer] ul,
+[data-ff-viewer] li,
+fieldset,
+[data-ff-viewer] form,
+[data-ff-viewer] label,
+[data-ff-viewer] legend,
+table,
+[data-ff-viewer] caption,
+[data-ff-viewer] tbody,
+[data-ff-viewer] tfoot,
+[data-ff-viewer] thead,
+[data-ff-viewer] tr,
+[data-ff-viewer] th,
+[data-ff-viewer] td,
+article,
+[data-ff-viewer] aside,
+[data-ff-viewer] canvas,
+[data-ff-viewer] details,
+[data-ff-viewer] embed,
+[data-ff-viewer] figure,
+[data-ff-viewer] figcaption,
+[data-ff-viewer] footer,
+[data-ff-viewer] header,
+[data-ff-viewer] hgroup,
+[data-ff-viewer] menu,
+[data-ff-viewer] nav,
+[data-ff-viewer] output,
+[data-ff-viewer] ruby,
+[data-ff-viewer] section,
+[data-ff-viewer] summary,
+time,
+[data-ff-viewer] mark,
+[data-ff-viewer] audio,
+[data-ff-viewer] video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+[data-ff-viewer] ol,
+[data-ff-viewer] ul {
+  list-style: none;
+}
+
+[data-ff-viewer] table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+[data-ff-viewer] [data-icon]:before,
+[data-ff-viewer] [data-icon]:after {
+  content: "";
+}
+
+[data-ff-viewer] {
+  position: relative;
+}
