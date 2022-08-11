@@ -1,38 +1,33 @@
-import EventEmiiter from 'eventemitter3';
+import EventEmitter from "./EventEmitter";
+export default class Time extends EventEmitter {
+  start: number;
+  current: number;
+  elapsed: number;
+  delta: number;
 
-export default class Time {
-
-  start: number
-  current: number
-  elapsed: number
-  delta: number
-  eventEmitter: EventEmiiter
-  
   constructor() {
+    super();
 
     // Setup
-    this.start = Date.now()
-    this.current = this.start
-    this.elapsed = 0
-    this.delta = 16
-    this.eventEmitter = new EventEmiiter()
-
+    this.start = Date.now();
+    this.current = this.start;
+    this.elapsed = 0;
+    this.delta = 16;
 
     window.requestAnimationFrame(() => {
-      this.tick()
-    })
+      this.tick();
+    });
   }
 
   tick() {
-    const currentTime = Date.now()
-    this.delta = currentTime - this.current
-    this.current = currentTime
-    this.elapsed = this.current - this.start
-
-    this.eventEmitter.emit('tick')
+    const currentTime = Date.now();
+    this.delta = currentTime - this.current;
+    this.current = currentTime;
+    this.elapsed = this.current - this.start;
+    this.trigger("tick");
 
     window.requestAnimationFrame(() => {
-      this.tick()
-    })
+      this.tick();
+    });
   }
 }

@@ -1,11 +1,9 @@
-import Experience from './scene/Experience';
+import Experience from "./scene/Experience";
 
+export const create = (container: Element) => {
+  container.setAttribute("data-folio", "");
 
-export const create = async (
-  container: Element,
-): Promise<void> => {
-  container.setAttribute("data-ff-viewer", "");
-
-    new Experience(container);
-
+  const experience = new Experience(container);
+  experience.init();
+  experience.initSetup();
 };

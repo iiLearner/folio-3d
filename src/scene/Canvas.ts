@@ -1,21 +1,25 @@
-import * as THREE from "three";
+import Experience from "./Experience";
 
 class Canvas {
-
   instance: HTMLCanvasElement;
-  constructor(renderer: THREE.WebGLRenderer) {
-    this.instance = renderer.domElement
-    this.instance.style.cursor = 'grab'
-    this.instance.style.outline = 'none'
+  constructor() {
+    const experience = new Experience();
+    const canvasElement = experience.container.querySelector(
+      "canvas.viewer"
+    ) as HTMLCanvasElement;
 
-    this.instance.addEventListener('pointerdown', () => {
-      this.instance.style.cursor = 'grabbing'
-    })
+    this.instance = canvasElement;
+    this.instance.style.cursor = "grab";
+    this.instance.style.outline = "none";
 
-    this.instance.addEventListener('pointerup', () => {
-      this.instance.style.cursor = 'grab'
-    })
+    this.instance.addEventListener("pointerdown", () => {
+      this.instance.style.cursor = "grabbing";
+    });
+
+    this.instance.addEventListener("pointerup", () => {
+      this.instance.style.cursor = "grab";
+    });
   }
-};
+}
 
-export default Canvas
+export default Canvas;

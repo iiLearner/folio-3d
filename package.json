@@ -3,8 +3,8 @@
   "version": "1.11.0-1",
   "scripts": {
     "commit": "cz",
-    "start": "webpack serve --config ./bundler/webpack.dev.js",
-    "build": "webpack --config ./bundler/webpack.prod.js",
+    "start": "webpack serve --config ./webpack.dev.js",
+    "build": "webpack --config ./webpack.prod.js",
     "release": "standard-version"
   },
   "author": "iLearner",
@@ -49,7 +49,8 @@
     "lil-gui": "^0.16.1",
     "lodash-es": "^4.17.20",
     "mini-css-extract-plugin": "^2.6.0",
-    "qrcode": "^1.4.4",
+    "portfinder-sync": "^0.0.2",
+    "react-dom": "^18.0.0",
     "three": "^0.129.0"
   },
   "husky": {

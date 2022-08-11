@@ -1,21 +1,8 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+  <head title="">
+    <title>Folio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script>
-      File.prototype.arrayBuffer = File.prototype.arrayBuffer || myArrayBuffer;
-      Blob.prototype.arrayBuffer = Blob.prototype.arrayBuffer || myArrayBuffer;
-
-      function myArrayBuffer() {
-        // this: File or Blob
-        return new Promise((resolve) => {
-          let fr = new FileReader();
-          fr.onload = () => {
-            resolve(fr.result);
-          };
-          fr.readAsArrayBuffer(this);
-        });
-      }
-    </script>
     <style>
       html,
       body {
@@ -27,5 +14,9 @@
       }
     </style>
   </head>
-  <body></body>
+  <body>
+    <canvas class="viewer" aria-label="Folio">
+      <h2>3D Visualization of Product</h2>
+    </canvas>
+  </body>
 </html>

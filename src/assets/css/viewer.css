@@ -1,11 +1,11 @@
-[data-ff-viewer] {
+[data-folio] {
   font-family: var(--ff-3d-viever-font-font-family);
   background-color: var(--ff-3d-viever-bg-color);
   color: var(--ff-3d-viever-text-color);
   overflow: hidden;
 }
 
-[data-ff-viewer] canvas.viewer {
+[data-folio] canvas.viewer {
   position: absolute;
   top: 0;
   right: 0;
@@ -14,7 +14,7 @@
   background-color: var(--ff-3d-viever-scene-bg-color);
 }
 
-[data-ff-viewer] .ArIcon-valentino {
+[data-folio] .ArIcon-valentino {
   background: #d2a044;
   background: radial-gradient(
     50% 50% at 50% 50%,
@@ -32,14 +32,14 @@
   display: flex;
   z-index: 1;
 }
-[data-ff-viewer] .ArIcon-valentino:hover {
+[data-folio] .ArIcon-valentino:hover {
   background: #000000;
 }
-[data-ff-viewer] .ArIcon-valentino img {
+[data-folio] .ArIcon-valentino img {
   width: 38px;
 }
 
-[data-ff-viewer] .ar-icon {
+[data-folio] .ar-icon {
   position: absolute;
   top: 0;
   right: 0;
@@ -48,46 +48,46 @@
   cursor: pointer;
 }
 @media screen and (min-width: 420px) and (max-width: 1024px) {
-  [data-ff-viewer] .ar-icon {
+  [data-folio] .ar-icon {
     width: 60px !important;
   }
 }
 
 @media screen and (max-width: 420px) {
-  [data-ff-viewer] .ar-icon {
+  [data-folio] .ar-icon {
     width: 60px !important;
   }
 }
 
-[data-ff-viewer] .modals-wrapper {
+[data-folio] .modals-wrapper {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-[data-ff-viewer] .tooltip {
+[data-folio] .tooltip {
   position: absolute;
   width: 100%;
   bottom: 6%;
   z-index: 1;
   text-align: center;
 }
-[data-ff-viewer] .handmove {
+[data-folio] .handmove {
   width: 50px;
   height: 50px;
   padding-bottom: 10px;
 }
 
-[data-ff-viewer] .text-muted {
+[data-folio] .text-muted {
   color: var(--ff-3d-viever-tooltip-font-color);
   font-size: var(--ff-3d-viever-tooltip-font-size);
 }
 
-[data-ff-viewer] .text-muted.small {
+[data-folio] .text-muted.small {
   font-size: var(--ff-3d-viever-tooltip-font-size-small);
 }
 
-[data-ff-viewer] #animate {
+[data-folio] #animate {
   bottom: 10%;
   position: absolute;
   -webkit-animation: linear infinite alternate;
@@ -95,17 +95,17 @@
   -webkit-animation-duration: 10s;
 }
 
-[data-ff-viewer] .previewimage {
+[data-folio] .previewimage {
   width: 100%;
   height: auto;
 }
 
-[data-ff-viewer] .previewimageDefault {
+[data-folio] .previewimageDefault {
   width: 100vw;
   height: 100vh;
 }
 
-[data-ff-viewer] .previewimageContainer {
+[data-folio] .previewimageContainer {
   position: absolute;
   top: 0px;
   display: flex;
@@ -114,7 +114,7 @@
   z-index: 999;
 }
 
-[data-ff-viewer] .preview-loader-overlay {
+[data-folio] .preview-loader-overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -123,7 +123,7 @@
   z-index: 100;
 }
 
-[data-ff-viewer] .preview-loader-overlay::after {
+[data-folio] .preview-loader-overlay::after {
   position: absolute;
   z-index: 101;
   content: " ";

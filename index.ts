@@ -1,6 +1,5 @@
 import App from "./src/index";
 
-
 App({
-  selector: 'body',
-})
+  selector: "body",
+});
