@@ -31,7 +31,6 @@ export default class Renderer {
     this.instance.outputEncoding = THREE.sRGBEncoding;
     this.instance.toneMapping = THREE.CineonToneMapping;
     this.instance.toneMappingExposure = 1.75;
-    this.instance.setClearColor("#211d20");
     this.instance.setSize(this.sizes.width, this.sizes.height);
     this.instance.setPixelRatio(Math.min(this.sizes.pixelRatio, 2));
   }
