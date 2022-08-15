@@ -1,9 +1,10 @@
 import * as THREE from "three";
+import { htmlToDomElement } from "../dom";
 import Sizes from "../utils/Sizes";
+import template from "./../assets/modal/instructions.html";
 import Camera from "./camera";
 import Canvas from "./canvas";
 import Experience from "./Experience";
-
 export default class Renderer {
   instance: THREE.WebGLRenderer;
   experience: Experience;
@@ -14,6 +15,9 @@ export default class Renderer {
 
   constructor() {
     this.experience = new Experience();
+    const app = htmlToDomElement(template);
+    this.experience.container.appendChild(app);
+
     this.canvas = this.experience.canvas;
     this.sizes = this.experience.sizes;
     this.scene = this.experience.scene;
